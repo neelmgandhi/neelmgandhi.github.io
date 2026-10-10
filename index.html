@@ -64,11 +64,12 @@ h1,h2,h3{font-family:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;lin
 
 /* Project sheets */
 .sheet{background:var(--sheet);border:1.5px solid var(--ink);margin:0 0 56px;padding:40px clamp(20px,4vw,48px) 44px;position:relative}
-.sheet-head{display:grid;grid-template-columns:1fr minmax(260px,340px);gap:28px;align-items:start;margin-bottom:28px}
+.sheet-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,380px);gap:28px;align-items:start;margin-bottom:28px}
 .sheet h2{font-size:clamp(2rem,5vw,3rem);font-weight:700}
 .sheet .summary{font-size:1.2rem;max-width:44ch;margin:14px 0 0}
 .titleblock{border:1.5px solid var(--ink);display:grid;grid-template-columns:auto 1fr;font-size:.95rem}
-.titleblock dt,.titleblock dd{margin:0;padding:7px 10px;border-bottom:1px solid var(--line)}
+.titleblock dt,.titleblock dd{margin:0;padding:7px 10px;border-bottom:1px solid var(--line);min-width:0;overflow-wrap:break-word}
+.titleblock .status{white-space:normal}
 .titleblock dt{font-family:"Barlow Semi Condensed",sans-serif;color:var(--muted);border-right:1px solid var(--line);font-weight:500}
 .titleblock dt:nth-last-of-type(1),.titleblock dd:last-of-type{border-bottom:0}
 .body{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;max-width:72ch}
